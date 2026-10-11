@@ -1,0 +1,190 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #173b70;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  width: min(950px, 94%);
+  margin: 25px auto;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000010;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input:not([type="checkbox"]), select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.consent input {
+  margin-top: 4px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 7px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#logoutBtn {
+  background: #64748b;
+}
+
+#studentForm {
+  margin-top: 20px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 11px;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background: #eaf1ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+
+
+[hidden] {
+  display: none !important;
+}
+
+.welcome-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  background:
+    linear-gradient(#061b35aa, #061b35aa),
+    url("welcome.png") center / cover no-repeat;
+  color: white;
+}
+
+.welcome-content {
+  max-width: 850px;
+}
+
+.welcome-content h1 {
+  font-size: clamp(38px, 7vw, 70px);
+  margin-bottom: 10px;
+}
+
+.welcome-content h2 {
+  font-size: clamp(32px, 6vw, 60px);
+  color: #ffc247;
+  margin: 10px 0;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#getStarted {
+  background: #ffc247;
+  color: #082344;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#getStarted:hover {
+  background: white;
+  transform: scale(1.04);
+}
+
+#welcomePage {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#examApp[hidden],
+#welcomePage[hidden] {
+  display: none !important;
+}

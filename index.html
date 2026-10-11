@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NPTEL Exam Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Welcome Page -->
+  <section id="welcomePage" class="welcome-page">
+    <div class="welcome-content">
+      <h1>Welcome to</h1>
+      <h2>CSE-D ROCKERS</h2>
+      <p>Same Department ❤️ Same Dreams ❤️ Stronger Together</p>
+      <button id="getStarted" type="button">Get Started →</button>
+    </div>
+  </section>
+
+  <!-- NPTEL Details Page: Hidden initially -->
+  <div id="examApp" hidden>
+
+    <header>
+      <h1>NPTEL Exam Details</h1>
+      <p>Enter your exam details and view your classmates' submissions.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Student Registration</h2>
+        <p id="loginStatus">Sign in with Google to continue.</p>
+        <button id="loginBtn" type="button">Sign in with Google</button>
+        <button id="logoutBtn" type="button" hidden>Sign out</button>
+
+        <form id="studentForm">
+          <label for="name">Student Name</label>
+          <input id="name" maxlength="80" required placeholder="Enter your name">
+
+          <label for="college">NPTEL Exam Center</label>
+          <input id="college" list="collegeList" maxlength="150"
+            required autocomplete="off" placeholder="Type college name">
+          <datalist id="collegeList"></datalist>
+
+          <label for="district">Address</label>
+          <input id="district" maxlength="80" required
+            placeholder="Enter your exam district">
+
+          <label for="session">Exam Session</label>
+          <select id="session" required>
+            <option value="">Select session</option>
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+          </select>
+
+          <label class="consent">
+            <input type="checkbox" id="consent" required>
+            I agree that my submitted details will be stored and
+            visible to signed-in classmates.
+          </label>
+
+          <button id="submitBtn" type="submit">Submit Details</button>
+          <p id="message" role="status"></p>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Class Details</h2>
+        <p>Only signed-in users can view the submitted records.</p>
+        <button id="refreshBtn" type="button">Refresh Details</button>
+        <p id="tableStatus" role="status"></p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>College</th>
+                <th>District</th>
+                <th>Session</th>
+              </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>NPTEL Exam Details · Student information shared with consent</footer>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
